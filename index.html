@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digi Fabric | دیجی فابریک</title>
+    <link rel="stylesheet" href="bootstrap-icons-1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row p-0">
+            <!-- nav-part first div of navigation -->
+            <div class="col-12 d-flex flex-wrap position-relative nav-part">
+                <!-- logo-nav -->
+                <div class="col-2  h-100 d-flex justify-content-center align-items-center position-absolute logo-nav">
+                    <img src="images/logo.png">
+                </div>
+                <!-- search-nav -->
+                <div
+                    class="col-12 col-md-5 z-3 mx-auto position-relative  h-100 d-flex justify-content-center align-items-center search-nav">
+                    <input type="text" id="search-input-nav" placeholder="نام محصول یا نام برند را جستجو کنید..."
+                        class="pe-3">
+                    <div
+                        class="position-absolute d-flex justify-content-center align-items-center mt-1 button-search-nav">
+                        <i class="bi bi-search"></i>
+                    </div>
+                </div>
+                <div class="position-absolute  h-100  d-flex align-items-center sign-log-in">
+                    <div class="h-50 w-100  d-flex justify-content-between sign-log-in-buttons">
+                        <button class="h-100 text-white sign-in-button">ثبت نام</button>
+                        <button class="h-100  log-in-button">ورود</button>
+                    </div>
+                </div>
+                <div
+                    class="col-3 col-md-1 d-flex justify-content-center align-items-center  position-absolute h-100 profile-nav">
+                    <div class="d-flex justify-content-center align-items-center profile-logo">
+                        <i class="bi bi-person-check mt-1"></i>
+                    </div>
+                </div>
+                <div
+                    class="col-2 col-md-1 d-flex justify-content-center align-items-center  position-absolute h-100  card-logo-nav">
+                    <div class="d-flex justify-content-center align-items-center card-logo">
+                        <i class="bi bi-bag mt-1"></i>
+                    </div>
+                </div>
+
+                <div
+                    class="col-2  col-sm-1 d-flex justify-content-center align-items-center position-absolute end-0 h-100 berger-menu">
+                    <i class="bi bi-list fs-1 h-50  d-md-none"></i>
+                </div>
+            </div>
+            <div class="col-12 d-block d-md-none w-100 p-0 m-0 hidden-off-position"></div>
+            <div class="col-12 d-none mx-auto mt-md-2 mx-0 px-0 w-100 items-nav">
+                <ul
+                    class="hidden-nav-items  p-0 m-0 d-flex justify-content-evenly align-items-center h-100 items-nav-ul">
+                    <li class=" list-unstyled items-nav-li"><a
+                            class="d-inline-block text-decoration-none pe-2 p-md-0 h-100 px-1 text-black items-nav-a"
+                            href="#">پشتیبانی</a></li>
+                    <li class=" list-unstyled items-nav-li"><a
+                            class="d-inline-block text-decoration-none pe-2 p-md-0 h-100 px-1 text-black items-nav-a"
+                            href="#">ارتباط با ما</a></li>
+                    <li class=" list-unstyled items-nav-li"><a
+                            class="d-inline-block text-decoration-none pe-2 p-md-0 h-100 px-1 text-black items-nav-a"
+                            href="#">برندها</a></li>
+                    <li class=" list-unstyled items-nav-li"><a
+                            class="d-inline-block text-decoration-none pe-2 p-md-0 h-100 px-1 text-black items-nav-a"
+                            href="#">دسته بندی محصولات</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row p-0 mt-4 m-0">
+            <!-- slider pictures (before md) / pictures for show for all pictures at one time (after md) -->
+            <div class="col-12 d-flex flex-wrap  justify-content-evenly align-items-center p-0 slider">
+                <div
+                    class="col-12 d-flex justify-content-center align-items-center flex-column col-md-6 first-slider-side">
+                    <div class="col-11 overflow-hidden slider-item">
+                        <img src="images/slider-pic-1.png" class="w-100 h-100 slider-before-md-img">
+                    </div>
+                </div>
+                <div class="col-12 d-none d-md-block col-md-6 second-slider-side">
+                    <div class="col-11 d-none d-sm-block overflow-hidden slider-item">
+                        <img src="images/slider-pic-3.png" class="w-100 h-100 slider-before-md-img">
+                    </div>
+                </div>
+                <div class="col-12 pt-3 d-none d-md-block col-md-6 second-slider-side">
+                    <div class="col-11 d-none d-sm-block overflow-hidden visually-hidden slider-item">
+                        <img src="images/slider-pic-1.png" class="w-100 h-100 slider-before-md-img">
+                    </div>
+                </div>
+                <div class="col-12 pt-3 d-none d-md-block col-md-6 second-slider-side">
+                    <div class="col-11 d-none d-sm-block overflow-hidden slider-item">
+                        <img src="images/slider-pic-2.png" class="w-100 h-100 slider-before-md-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 d-flex justify-content-evenly mx-auto pt-4 slider-buttons">
+                <button class="d-flex justify-content-center align-items-center arrow-left"><i
+                        class="mt-1 bi bi-arrow-left-circle"></i></button>
+                <button class="d-flex justify-content-center align-items-center arrow-right"><i
+                        class="mt-1 bi bi-arrow-right-circle"></i></button>
+            </div>
+        </div>
+        <div class="row p-0 m-0">
+            <div class="col-12 p-0 m-0 mt-5 categories">
+                <div class="col-12 categories-title">
+                    <p class="text-center">دسته بندی محصولات</p>
+                </div>
+                <div class="col-12 mt-4 d-flex justify-content-between flex-column flex-md-row categories-items">
+                    <div class="d-flex justify-content-evenly col-12 col-md-6">
+                        <div class="categories-item">
+                            <div
+                                class="mx-auto d-flex justify-content-center align-items-center categories-img categories-img1">
+                                <img src="images/Group 24.png">
+                            </div>
+                            <p class="pt-3 C-item-p1">فرشینه</p>
+                        </div>
+                        <div class=" categories-item">
+                            <div
+                                class="mx-auto d-flex justify-content-center align-items-center categories-img categories-img2">
+                                <img src="images/Group 25.png">
+                            </div>
+                            <p class="pt-3 C-item-p2">دکوراسیون</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-evenly mt-5 mt-md-0 col-12 col-md-6">
+                        <div class=" categories-item">
+                            <div
+                                class="mx-auto d-flex justify-content-center align-items-center categories-img categories-img3">
+                                <img src="images/Group 26.png">
+                            </div>
+                            <p class="pt-3 C-item-p3">پرده</p>
+                        </div>
+                        <div class=" categories-item">
+                            <div
+                                class="mx-auto d-flex justify-content-center align-items-center categories-img categories-img4">
+                                <img src="images/Group 27.png">
+                            </div>
+                            <p class="pt-3 C-item-p4">مبلمان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 m-0">
+            <div class="col-12 p-0 m-0 mt-5 mb-5 azamingReduces">
+                <div class="col-12 text-white  position-relative a-reduces-title">
+                    <p class="position-absolute user-select-none ">جشنواره تخفیفات ویژه</p>
+                    <p class="position-absolute"><i class="bi bi-arrow-left-short"></i> مشاهده همه </p>
+                </div>
+                <div class="col-12 d-flex overflow-auto   a-reduces-slider">
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 reduces-item">
+                        <div class="w-100 reduces-item-img">
+                            <img src="images/img-slider-item.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> پرده زیرا مدل acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 reduces-item">
+                        <div class="w-100 reduces-item-img">
+                            <img src="images/img-slider-item.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> پرده زیرا مدل acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 reduces-item">
+                        <div class="w-100 reduces-item-img">
+                            <img src="images/img-slider-item.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> پرده زیرا مدل acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 reduces-item">
+                        <div class="w-100 reduces-item-img">
+                            <img src="images/img-slider-item.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> پرده زیرا مدل acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 reduces-item">
+                        <div class="w-100 reduces-item-img">
+                            <img src="images/img-slider-item.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> پرده زیرا مدل acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 reduces-item">
+                        <div class="w-100 reduces-item-img">
+                            <img src="images/img-slider-item.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> پرده زیرا مدل acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 reduces-item">
+                        <div class="w-100 reduces-item-img">
+                            <img src="images/img-slider-item.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> پرده زیرا مدل acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 m-0">
+            <div class="col-12 p-0 m-0 mt-5"></div>
+            <div
+                class="col-12 p-0 m-0 mt-4 d-flex justify-content-evenly flex-column align-items-center dig-fabric-sections">
+                <div class="col-12 col-md-10 d-flex justify-content-evenly p-0 m-0 dig-section-one">
+                    <div class="col-6 section-item">
+                        <img src="images/dig-fabric-f1.png" class="w-100 h-100">
+                    </div>
+                    <div class="col-5 section-item">
+                        <img src="images/dig-fabric-f2.png" class="w-100 h-100">
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 d-flex justify-content-evenly p-0 m-0 mt-2 dig-section-one">
+                    <div class="col-5 section-item">
+                        <img src="images/dig-fabric-f3.png" class="w-100 h-100">
+                    </div>
+                    <div class="col-6 section-item">
+                        <img src="images/dig-fabric-f4.png" class="w-100 h-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 m-0">
+            <div class="col-12 p-0 m-0 mt-5 mb-5 azamingCarpet">
+                <div class="col-12 text-white  position-relative a-Carpet-title">
+                    <p class="position-absolute user-select-none ">پرفروش ترین پرده ها</p>
+                    <p class="position-absolute"><i class="bi bi-arrow-left-short"></i> مشاهده همه </p>
+                </div>
+                <div class="col-12 d-flex overflow-auto   a-Carpet-slider">
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 Carpet-item">
+                        <div class="w-100 Carpet-item-img">
+                            <img src="images/img-slider-item.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> پرده زیرا مدل acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 Carpet-item">
+                        <div class="w-100 Carpet-item-img">
+                            <img src="images/img-slider-item.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> پرده زیرا مدل acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 Carpet-item">
+                        <div class="w-100 Carpet-item-img">
+                            <img src="images/img-slider-item.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> پرده زیرا مدل acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 Carpet-item">
+                        <div class="w-100 Carpet-item-img">
+                            <img src="images/img-slider-item.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> پرده زیرا مدل acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 Carpet-item">
+                        <div class="w-100 Carpet-item-img">
+                            <img src="images/img-slider-item.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> پرده زیرا مدل acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 Carpet-item">
+                        <div class="w-100 Carpet-item-img">
+                            <img src="images/img-slider-item.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> پرده زیرا مدل acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 Carpet-item">
+                        <div class="w-100 Carpet-item-img">
+                            <img src="images/img-slider-item.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> پرده زیرا مدل acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 m-0">
+            <div class="col-12 p-0 m-0 mt-5 mb-5 azamingSofa">
+                <div class="col-12 text-white  position-relative a-Sofa-title">
+                    <p class="position-absolute user-select-none ">پرفروش ترین مبل ها</p>
+                    <p class="position-absolute"><i class="bi bi-arrow-left-short"></i> مشاهده همه </p>
+                </div>
+                <div class="col-12 d-flex overflow-auto   a-Sofa-slider">
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 Sofa-item">
+                        <div class="w-100 Sofa-item-img">
+                            <img src="images/img-slider-item-3.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> مبل تخت خوابشو acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 Sofa-item">
+                        <div class="w-100 Sofa-item-img">
+                            <img src="images/img-slider-item-3.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> مبل تخت خوابشو acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 Sofa-item">
+                        <div class="w-100 Sofa-item-img">
+                            <img src="images/img-slider-item-3.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> مبل تخت خوابشو acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 Sofa-item">
+                        <div class="w-100 Sofa-item-img">
+                            <img src="images/img-slider-item-3.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> مبل تخت خوابشو acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 Sofa-item">
+                        <div class="w-100 Sofa-item-img">
+                            <img src="images/img-slider-item-3.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> مبل تخت خوابشو acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 Sofa-item">
+                        <div class="w-100 Sofa-item-img">
+                            <img src="images/img-slider-item-3.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> مبل تخت خوابشو acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                    <div class="col-4 col-sm-3 col-md-2   mx-2 Sofa-item">
+                        <div class="w-100 Sofa-item-img">
+                            <img src="images/img-slider-item-3.png" class="w-100 h-100">
+                        </div>
+                        <p class="pe-2 pt-1 mb-0"> مبل تخت خوابشو acd21</p>
+                        <p class="pe-2 pt-1 mb-0 text-danger text-decoration-line-through">400,000</p>
+                        <p class="pe-2 pt-1 mb-0 text-black">350,000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 m-0 footerrow">
+            <div class="col-12 p-0 m-0 border-top border-primary footer">
+                <div class="col-12 d-sm-flex justify-content-sm-between footer-logo-links">
+                    <div class="col-3 order-1 col-sm-2 mx-auto pt-4  footer-logo">
+                        <img src="images/logo.png" class="w-100 h-100">
+                    </div>
+                    <div class="col-7 order-0 col-sm-5 col-md-4 col-lg-3 pt-3 mx-auto footer-links">
+                        <div class="col-12 mb-3 p-md-0 footer-link-title">
+                            <p class="text-center mb-1">:مارا در شبکه های اجتماعی دنبال کنید</p>
+                        </div>
+                        <div
+                            class="col-12 col-md-8 mx-auto d-flex justify-content-evenly align-items-center footer-link-icons">
+                            <i class="text-secondary fs-1 bi bi-telegram"></i>
+                            <i class="text-secondary fs-1 bi bi-instagram"></i>
+                            <i class="text-secondary fs-1 bi bi-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-5 pb-3 d-flex p-0 m-0 footer-lists-mail">
+                    <div class="col-7  flex-column flex-md-row d-flex order-1 justify-content-evenly  footer-lists">
+                        <div class="col-12 me-2 me-md-0  col-md-4 mb-3 m-md-0 footer-item">
+                            <p class="mb-1 me-md-2 me-0 d-none d-md-block"><i
+                                    class="text-warning bi bi-circle-fill"></i> دیجی فابریک</p>
+                            <p class=" mb-0 mb-md-1 d-block d-md-none footer-item-opener"> دیجی فابریک</p>
+                            <ul class="me-md-3 p-0 m-0  openclosefooteritem">
+                                <li class="my-md-2  list-unstyled"><a class="text-decoration-none" href="#"> اخبار دیجی
+                                        فابریک</a></li>
+                                <li class="my-md-2  list-unstyled"><a class="text-decoration-none" href="#"> فرصت های
+                                        شغلی</a></li>
+                                <li class="my-md-2  list-unstyled"><a class="text-decoration-none" href="#"> درباره
+                                        ما</a></li>
+                                <li class="my-md-2  list-unstyled"><a class="text-decoration-none" href="#"> همکاری با
+                                        ما</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 me-2 me-md-0 col-md-4 mb-3 m-md-0 footer-item">
+                            <p class="mb-1 me-md-2 me-0 d-none d-md-block"><i
+                                    class="text-warning bi bi-circle-fill"></i> خدمات مشتریان</p>
+                            <p class="  mb-0 mb-md-1 d-block d-md-none footer-item-opener"> خدمات مشتریان</p>
+                            <ul class="me-md-3 p-0 m-0  openclosefooteritem">
+                                <li class="my-md-2  list-unstyled"><a class="text-decoration-none" href="#"> پرسش های
+                                        متداول</a></li>
+                                <li class="my-md-2  list-unstyled"><a class="text-decoration-none" href="#"> رویه
+                                        مرجوعی</a></li>
+                                <li class="my-md-2  list-unstyled"><a class="text-decoration-none" href="#"> شرایط
+                                        استفاده</a></li>
+                                <li class="my-md-2  list-unstyled"><a class="text-decoration-none" href="#"> حریم
+                                        خصوصی</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 me-2 me-md-0 col-md-4 mb-3 m-md-0 footer-item">
+                            <p class="mb-1 me-md-2 me-0 d-none d-md-block"><i
+                                    class="text-warning bi bi-circle-fill"></i> راهنمای سفارش</p>
+                            <p class=" mb-0 mb-md-1 d-block d-md-none footer-item-opener"> راهنمای سفارش</p>
+                            <ul class="me-md-3 p-0 m-0  openclosefooteritem">
+                                <li class="my-md-2  list-unstyled"><a class="text-decoration-none" href="#">راهنمای
+                                        سفارش</a></li>
+                                <li class="my-md-2  list-unstyled"><a class="text-decoration-none" href="#">نحوه ثبت
+                                        سفارش</a></li>
+                                <li class="my-md-2  list-unstyled"><a class="text-decoration-none" href="#">نحوه
+                                        ارسال</a></li>
+                                <li class="my-md-2  list-unstyled"><a class="text-decoration-none" href="#">شیوه
+                                        پرداخت</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="col-5 d-flex  justify-content-evenly align-items-center flex-column  order-0 footer-mail">
+                        <div class="col-12  mail-title">
+                            <p class="text-center mb-1">با ثبت ایمیل از جدید ترین اخبار مطلع شوید</p>
+                        </div>
+                        <div class="col-12 col-sm-10 col-md-6  mail-input">
+                            <input type="text" placeholder="ایمیل خود را وارد کنید" class="w-100 h-100 pe-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 p-0 m-0 d-flex    lastFooter-info">
+                <div class="col-7 pt-4 pe-3 border-top border-primary aboutDigi">
+                    <p ><i
+                        class="text-warning bi bi-circle-fill"></i> درباره دیجی فابریک</p>
+                    <p>دیجی فابریک آنلاین است و تمام آنچه را كاربر از یک فضای آنلاين انتظار دارد به‌خوبی برآورده می‌کند.
+                        کاربری آسان، پرداخت امن از درگاه‌های بانکی، نماد اعتماد الکترونیک، ضمانت بازگشت پول، امانت‌داری،
+                        پشتیبانی حرفه‌ای برای راهنمایی و رفع مشکلات
+                        دیجی فابریک اجتماعی است، به این معنی که راه گفت‌وگو و تعامل بی‌واسطه بین خریداران و غرفه‌داران
+                        همیشه
+                    </p>
+                </div>
+                <div class="col-4 d-flex flex-column flex-sm-row justify-content-evenly align-items-center licences">
+                    <div class="col-6 col-sm-4">
+                        
+                        <img src="images/licence2.png" class="w-100 h-100">
+                    </div>
+                    <div class="col-6 col-sm-4">
+                        
+                        <img src="images/licence3.png" class="w-100 h-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
