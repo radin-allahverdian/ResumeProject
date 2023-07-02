@@ -3,6 +3,15 @@ const navitemslist = document.querySelector('.items-nav-ul');
 const searchNav = document.querySelector(".search-nav");
 const itemsNav = document.querySelector('.items-nav');
 
+
+var viewportWidth = document.documentElement.clientWidth;
+console.log(viewportWidth);
+
+if (viewportWidth > 768) {
+    itemsNav.classList.remove('d-none');
+    bergerMenu.classList.add('d-none');
+}
+
 bergerMenu.addEventListener("click", function () {
     navitemslist.classList.toggle('hidden-nav-items');
     searchNav.classList.toggle('z-3');
@@ -44,5 +53,7 @@ footeritemopener[1].addEventListener('click', function () {
 
 footeritemopener[2].addEventListener('click', function () {
     openclosefooteritem[2].classList.toggle('unhidden-footer-item');
-})
+});
+
+
 

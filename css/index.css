@@ -178,8 +178,8 @@
 
 .categories-item>.categories-img {
     height: 85%;
-    width: 75%;
-    border-radius: 20%;
+    width: 83%;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -451,7 +451,7 @@
 }
 
 .footer-lists-mail>.footer-lists>.footer-item>ul>li {
-    width: 60%;
+    width: 75%;
     cursor: pointer;
 }
 
@@ -501,6 +501,15 @@
     color: #9e9e9e;
     line-height: 30px;
     text-align: justify;
+}
+
+@media all and (min-width:992px){
+    .categories-item>.categories-img {
+        height: 85%;
+        width: 60%;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 }
 
 @media all and (max-width:767px) {
@@ -649,6 +658,13 @@
 
     .profile-nav {
         left: 7%;
+    }
+
+    .categories-item>.categories-img {
+        height: 85%;
+        width: 62%;
+        border-radius: 10px;
+        cursor: pointer;
     }
 }
 
